@@ -62,6 +62,35 @@ html {
 .col-offset-10 { margin-left: 83.333333%; }
 .col-offset-11 { margin-left: 91.666667%; }
 
+/*-- menu bar --*/
+.menu-bar {
+			position: absolute;
+			z-index: 400;
+		}
+		
+		ul.menu-bar li a:hover {
+				display: inline;
+				color: white;
+				}
+				
+		.menu-bar {
+			font-family: 'Press Start 2P', cursive;
+		}
+		
+		ul.menu-bar li {
+			display: inline-block;
+			padding-top: 90px;
+			padding-bottom: 90px;
+			padding-left: 15px;
+			font-size: 15pt;
+			z-index: 400;
+		}
+	
+		
+		ul.menu-bar li a {
+			text-decoration: none;
+			color: black;
+		}
 
 /*-- helpers --*/
 .test,
