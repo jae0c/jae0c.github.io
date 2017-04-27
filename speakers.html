@@ -57,19 +57,16 @@
 			.pink:hover {
 				background-color: transparent;
 			}
-			
-			.pink:hover ~.hi {
-				visibility: visible;
-			}
-			
-			/*
 			.pink:hover ~.pinkappear {
 				background-color: #FF58DF;
+			}
+			.pink:hover ~.hi {
+				visibility: visible;
 			}
 			.pink:hover ~.bh-info {
 				color: #FF58DF;
 			}
-			*/
+		
 			
 			.hi {
 				position: absolute;
@@ -93,6 +90,9 @@
 			}
 			.yellow:hover ~.welcome {
 				visibility: visible;
+			}
+			.yellow:hover ~.yellowappear {
+				background-color: #FFF853;
 			}
 			
 			.welcome {
@@ -119,7 +119,9 @@
 			.blue:hover ~.havefun {
 				visibility: visible;
 			}
-			
+			.blue:hover ~.blueappear {
+				background-color: #53FFF2;
+			}
 			.havefun {
 				position: absolute;
 				z-index: 500;
@@ -173,7 +175,44 @@
 				color: #53FFF2;
 			}
 			
-		
+			[class*='sangja'] {
+				position: absolute;
+				width: 192px;
+				height: 192px;
+				opacity: .83;
+			}
+			
+			.sangja-1 {
+				top: -200px;
+				left: 0x;
+				z-index: -1;
+			}
+			.sangja-2 {
+				left: -200px;
+				z-index: -1;
+			}
+			.sangja-3 {
+				top: 200px;
+				z-index: -1;
+			}
+			.sangja-4 {
+				top: -200px;
+			}
+			.sangja-5 {
+				left: 200px;
+			}
+			.sangja-6 {
+				left: -800px;
+			}
+			.sangja-7 {
+				top: -200px;
+			}
+			.sangja-8 {
+				left: -200px;
+			}
+			.sangja-9 {
+				top: 200px;
+			}
 			@keyframes pulse {
 				0% {opacity: .38;}
 				50% {opacity: .8;}
@@ -204,7 +243,7 @@
 			
 			<div class="row-2">
 				<div class="col-2 first"></div>
-				<div class="col-2 pinkappear"></div>
+				<div class="col-2"></div>
 				<div class="col-2"></div>
 				<div class="col-2"></div>
 				<div class="col-2"></div>
@@ -212,9 +251,12 @@
 			</div>
 			
 			<div class="row-3">
-				<div class="col-2 first pinkappear"></div>
+				<div class="col-2 first"></div>
 				<div class="col-2">
 					<div class="pink"></div>
+					<div class="sangja-1 pinkappear"></div>
+					<div class="sangja-2 pinkappear"></div>
+					<div class="sangja-3 pinkappear"></div>
 					<img class="bh-img" src=/img/BH.png>
 					<img class="hi" src=/img/hi.png>
 				</div>
@@ -227,7 +269,7 @@
 			
 			<div class="row-4">
 				<div class="col-2 first"></div>
-				<div class="col-2 pinkappear"></div>
+				<div class="col-2"></div>
 				<div class="col-2"></div>
 				<div class="col-2"></div>
 				<div class="col-2"></div>
@@ -251,6 +293,9 @@
 				<div class="cs-infobox cs-info"><p><span class="bold">Chris Spooner</span> is a massive name in the world of online graphic designers.<br> Chris’s blogs are full of inspiration, ideas, techniques and tutorials that can help even the most accomplished graphic and web designers improve.</p></div>
 				<div class="col-2">
 					<div class="yellow"></div>
+					<div class="sangja-4 yellowappear"></div>
+					<div class="sangja-5 yellowappear"></div>
+					<div class="sangja-6 yellowappear"></div>
 					<img class="cs-img" src=/img/CS.png>
 					<img class="welcome" src=/img/welcome.png>
 				</div>
@@ -270,6 +315,9 @@
 				<div class="col-2 first"></div>
 				<div class="col-2">
 					<div class="blue"></div>
+					<div class="sangja-7 blueappear"></div>
+					<div class="sangja-8 blueappear"></div>
+					<div class="sangja-9 blueappear"></div>
 					<img class="jw-img" src=/img/JW.png>
 					<img class="havefun" src="img/havefun.png">
 				</div>
