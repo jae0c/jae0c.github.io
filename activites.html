@@ -68,15 +68,48 @@
 				top: 426px;
 				left: 33px;
 			}
+			.color-title-box:hover {
+				font-size: 0;
+			}
+			.color-title-box:hover:after {
+				content: attr(data-hover);
+				font-size: 60pt;
+				color: #53FFF2;
+			}
+			.color-title-box:hover +.color-info {
+				visibility: visible;
+			}
 			
 			.typo-title-box {
 				top: 823px;
 				left: 831px;
 			}
+			.typo-title-box:hover {
+				font-size: 0;
+			}
+			.typo-title-box:hover:after {
+				color: #FFF853;
+				font-size: 60pt;
+				content: attr(data-hover);
+			}
+			.typo-title-box:hover ~.typo-info {
+				visibility: visible; 
+			}
 			
 			.pattern-title-box {
 				top: 1025px;
 				left: 228px;
+			}
+			.pattern-title-box:hover {
+				font-size: 0;
+			}
+			.pattern-title-box:hover:after {
+				content: attr(data-hover);
+				font-size: 60pt;
+				color: #53FFF2;
+			}
+			.pattern-title-box:hover ~.pattern-info {
+				visibility: visible;
 			}
 			
 			.eat {
@@ -89,6 +122,17 @@
 				left: 632px;
 				padding-left: 35px;
 			}
+			.eat-title-box:hover {
+				font-size: 0;
+			}
+			.eat-title-box:hover:after {
+				content: attr(data-hover);
+				color: #FFF853;
+				font-size: 60pt;
+			}
+			.eat-title-box:hover ~.eat-info {
+				visibility: visible;
+			}
 			
 			.style {
 				width: 160px;
@@ -99,6 +143,17 @@
 				top: 1824px;
 				left: 628px;
 				width: 545px;
+			}
+			.style-title-box:hover {
+				font-size: 0;
+			}
+			.style-title-box:hover:after {
+				content: attr(data-hover);
+				font-size: 60pt;
+				color: #53FFF2;
+			}
+			.style-title-box:hover ~.style-info {
+				visibility: visible;
 			}
 			
 			.connection {
@@ -111,6 +166,31 @@
 				color: #FFF853;
 			}
 			
+			[class*=-info] {
+				position: absolute;
+				z-index: 500;
+				visibility: hidden;
+			}
+			.color-info {
+				left: 206px;
+				top: 491px;
+			}
+			.typo-info {
+				left: 650px;
+				top: 330px;
+			}
+			.pattern-info {
+				left: 15px;
+				top: 1100px;
+			}
+			.eat-info {
+				left: 650px;
+				top: 980px;
+			}
+			.style-info {
+				left: 224px;
+				top: 1340px;
+			}
 		</style>
 	</head>
 	
@@ -144,9 +224,10 @@
 			<div class="row-3">
 				<div class="col-2 first"></div>
 				<div class="col-2"></div>
-				<div class="color-title-box">
+				<div class="color-title-box" data-hover="Color!">
 				Color?
 				</div>
+				<img class="color-info" src="img/color_info.png">
 				<div class="col-2 yellow">
 					<img class="color" src=/img/color.png>
 				</div>
@@ -169,7 +250,8 @@
 				<div class="col-2 blue">
 					<img class="typo" src="/img/typo.png">
 				</div>
-				<div class="typo-title-box">Typo?</div>
+				<div class="typo-title-box" data-hover="graphy!">Typo?</div>
+				<img class="typo-info" src="img/typo_info.png">
 				<div class="col-2"></div>
 				<div class="col-2 last"></div>
 			</div>
@@ -177,7 +259,8 @@
 				<div class="col-2 first yellow">
 					<img class="pattern" src="/img/pattern.png">
 				</div>
-				<div class="pattern-title-box"> Pat?</div>
+				<div class="pattern-title-box" data-hover="tern!"> Pat?</div>
+				<img class="pattern-info" src="img/pattern_info.png">
 				<div class="col-2"></div>
 				<div class="col-2"></div>
 				<div class="col-2"></div>
@@ -198,7 +281,8 @@
 				<div class="col-2"></div>
 				<div class="col-2"></div>
 				<div class="col-2"></div>
-				<div class="eat-title-box">E?A?T?</div>
+				<div class="eat-title-box" data-hover="E!A!T!">E?A?T?</div>
+				<img class="eat-info" src="img/eat_info.png">
 				<div class="col-2 last blue">
 					<img class="eat" src="img/eay.png">
 				</div>
@@ -217,7 +301,8 @@
 				<div class="col-2 yellow">
 					<img class="style" src="img/style.png">
 				</div>
-				<div class="style-title-box">Designers'</div>
+				<div class="style-title-box" data-hover="Style!">Designers'</div>
+				<img class="style-info" src="img/style_info.png">
 				<div class="col-2"></div>
 				<div class="col-2"></div>
 				<div class="col-2 last"></div>
