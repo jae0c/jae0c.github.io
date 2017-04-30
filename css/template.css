@@ -92,6 +92,10 @@ html {
 			color: black;
 		}
 		
+		.menu-activities {
+			font-size: 12pt;
+		}
+
 		[class*='sangja'] {
 				position: absolute;
 				width: 188px;
