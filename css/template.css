@@ -82,7 +82,7 @@ html {
 			padding-top: 90px;
 			padding-bottom: 90px;
 			padding-left: 15px;
-			font-size: 15pt;
+			font-size: 12pt;
 			z-index: 400;
 		}
 	
@@ -92,9 +92,7 @@ html {
 			color: black;
 		}
 		
-		.menu-activities {
-			font-size: 12pt;
-		}
+
 
 		[class*='sangja'] {
 				position: absolute;
